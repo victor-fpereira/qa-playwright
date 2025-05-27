@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 import Checkboxes from "../pages/checkboxes";
 import Home from "../pages/home";
 
-test.describe.only("Verify checkboxes enable and disable behavior", () => {
+test.describe("Verify checkboxes enable and disable behavior", () => {
   test("Click on checkbox", async ({ page }) => {
     const home = new Home(page);
     const checkbox = new Checkboxes(page);
@@ -20,7 +20,7 @@ test.describe.only("Verify checkboxes enable and disable behavior", () => {
     );
   });
 
-  test.only("Click on checkbox with steps", async ({ page }) => {
+  test("Click on checkbox with steps", async ({ page }) => {
     const home = new Home(page);
     const checkbox = new Checkboxes(page);
 
