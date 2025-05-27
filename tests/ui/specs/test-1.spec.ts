@@ -3,8 +3,7 @@ import { test, expect } from "@playwright/test";
 require("dotenv").config();
 
 async function goToUrl(page) {
-  const url = process.env.HOME;
-  await page.goto(url);
+  await page.goto("/");
 }
 
 async function clickCheckboxesLink(page) {
